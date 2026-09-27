@@ -1,7 +1,5 @@
 # TCGA-Subtypes
 
-Repository for the study:
-
 **Integrative Machine Learning and Network Analysis Extend TCGA Subtypes and Reveal Pan-Cancer Functional Convergence**
 
 This repository provides the TCGA molecular subtype assignments used in the study, including subtype annotations extended by machine-learning prediction for samples without previously assigned subtypes.
