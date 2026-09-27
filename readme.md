@@ -50,15 +50,13 @@ $$ S_{ik} = \sum_m w_{km} p_{ikm} $$
 
 where:
 
-- \(p_{ikm}\) is the probability assigned to subtype \(k\) for sample \(i\) by model \(m\);
-- \(AUC_{km}\) is the corresponding model/subtype AUC;
+- $$p_{ikm}$$ is the probability assigned to subtype \(k\) for sample \(i\) by model \(m\);
+- $$AUC_{km}$$ is the corresponding model/subtype AUC;
 - models with AUC < 0.8 receive zero weight.
 
 The subtype with the largest aggregated score is assigned as the final predicted subtype:
 
-\[
-\hat{k}_i = \arg\max_k S_{ik}
-\]
+$$hat{k}_i = \arg\max_k S_{ik}$$
 
 This strategy combines prediction confidence with model-specific discriminative performance.
 
