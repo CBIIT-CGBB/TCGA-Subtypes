@@ -44,6 +44,8 @@ To integrate predictions across machine-learning methods, we used a **Performanc
 
 For sample \(i\), candidate subtype \(k\), and model \(m\), the model-predicted probability is weighted by the corresponding predictive performance:
 
+$$w_{km} = AUC_{km} \times I(AUC_{km} \ge 0.8)$$
+
 \[
 w_{km} = AUC_{km} \times I(AUC_{km} \ge 0.8)
 \]
