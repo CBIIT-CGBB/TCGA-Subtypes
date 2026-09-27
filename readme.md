@@ -46,13 +46,7 @@ For sample \(i\), candidate subtype \(k\), and model \(m\), the model-predicted 
 
 $$w_{km} = AUC_{km} \times I(AUC_{km} \ge 0.8)$$
 
-\[
-w_{km} = AUC_{km} \times I(AUC_{km} \ge 0.8)
-\]
-
-\[
-S_{ik} = \sum_m w_{km} p_{ikm}
-\]
+$$ S_{ik} = \sum_m w_{km} p_{ikm} $$
 
 where:
 
