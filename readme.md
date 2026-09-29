@@ -214,7 +214,7 @@ TCGA RNA-seq + existing subtype annotations
 
 ## Data sources
 
-The study uses data from **The Cancer Genome Atlas (TCGA)**, including RNA-seq expression data and existing molecular subtype annotations.
+The study uses data from [**The Cancer Genome Atlas (TCGA)**](https://portal.gdc.cancer.gov/), including RNA-seq expression data and existing molecular subtype annotations.
 
 Subtype annotations were assembled using the Bioconductor package [**TCGAbiolinks**](https://www.bioconductor.org/packages/release/bioc/html/TCGAbiolinks.html) and were extended in this study for samples lacking existing subtype assignments.
 
