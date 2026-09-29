@@ -74,6 +74,26 @@ These files are intended to provide a convenient subtype resource for downstream
 
 Users should preserve TCGA sample identifiers when joining these subtype annotations to molecular or clinical data.
 
+### `HALLMARK_Cluster/`
+
+The [`HALLMARK_Cluster`](https://github.com/CBIIT-CGBB/TCGA-Subtypes/tree/main/HALLMARK_Cluster) directory contains the HALLMARK pathway network-clustering results used to define the sub-pathways analyzed in this study.
+
+Gene-link information used to construct the pathway networks was obtained from **NeST**:
+
+- NeST: https://idekerlab.ucsd.edu/nest/
+
+For each HALLMARK pathway, genes were connected using the available NeST gene-link information. A connected network backbone was then generated using a **minimum spanning tree (MST)** approach. The resulting graph was partitioned into topological sub-pathways using **Louvain community detection**. Each Louvain community was treated as a pathway sub-cluster (sub-pathway) for downstream analyses.
+
+For each HALLMARK pathway, three output file types are provided:
+
+| File type | Description |
+|---|---|
+| `*_edge.csv` | Gene–gene relationships used to define the pathway network edges. |
+| `*_node.csv` | Node-level information for pathway genes, including plotting coordinates and the assigned Louvain cluster/sub-pathway ID. |
+| `*.pdf` | Network visualization of the HALLMARK pathway, with nodes colored according to their cluster/sub-pathway assignment. |
+
+Together, these files provide both the machine-readable network representation and the corresponding graphical view of each HALLMARK pathway decomposition.
+
 ## Downstream subtype analysis
 
 ### Subtype-associated genes
