@@ -54,7 +54,7 @@ where:
 
 The subtype with the largest aggregated score is assigned as the final predicted subtype:
 
-$$hat{k}_i = \arg\max_k S_{ik}$$
+$$\widehat{k}_i = \arg\max_k S_{ik}$$
 
 This strategy combines prediction confidence with model-specific discriminative performance.
 
